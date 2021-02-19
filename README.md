@@ -1,9 +1,13 @@
 # Red1s 
-An extremely simplified Redis server implementation that supports the following commands:
+An extremely simplified key/value store that sorta kinda implements some of the Redis RESP spec that I hacked together in a few hours for a job interview. Currently supports the following commands:
 
 * GET
 * DEL 
 * SET
+
+**Note**: 
+* Keys and values are limited to 4096 bytes.
+* Only supports basic strings in the form `$3\r\nset\r\n$3key\r\n%5value\r\n`.
 
 ---
 
