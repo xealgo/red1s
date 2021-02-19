@@ -7,7 +7,7 @@ An extremely simplified key/value store that sorta kinda implements some of the 
 
 **Note**: 
 * Keys and values are limited to 4096 bytes.
-* Only supports basic strings in the form `$3\r\nset\r\n$3key\r\n%5value\r\n`.
+* Only supports basic strings in the form `$3\r\nset\r\n$3\r\nkey\r\n$5\r\nvalue\r\n`.
 
 ---
 
